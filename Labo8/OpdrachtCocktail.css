@@ -1,0 +1,88 @@
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 20px;
+    width: 95%;
+    font-family: Verdana, Helvetica, Arial, sans-serif; /* Moved font-family */
+    font-size: 1.2em; /* Moved font-size */
+    text-align: center; /* Moved text-align */
+}
+
+/* Main Content - 70% Width */
+article:first-of-type {
+    width: 70%;
+    text-align: left;
+    margin-right: 20px; /* Space between the two articles */
+}
+
+/* Weekly Specials - 30% Width */
+.weekly {
+    width: 30%;
+    border: 5px solid rgb(167, 206, 206); /* Added solid border */
+    color: rgb(68, 68, 68);
+    padding: 20px;
+    text-align: center; /* Centering the text */
+}
+
+/* Box for the guarantee paragraph */
+#guarantee {
+    margin: 30px auto; /* 30px margin around the box */
+
+    color: rgb(68, 68, 68); /* Text color */
+    background-color: rgb(167, 206, 206); /* Background color */
+    border: 2px dotted white; /* White dotted border */
+    width: 90%; /* Set the box width */
+
+    display: flex; /* Flexbox to align image and text */
+    align-items: center; /* Align image and text vertically */
+    font-size: 0.9em; /* Adjust font size */
+}
+#guarantee img {
+
+    margin-bottom: 45px;
+    height: 77px; /* Image height */
+    width: 82px; /* Image width */
+}
+/* h1 and h2 styling */
+h1 {
+    color: rgb(0, 126, 126);
+    font-size: 150%;
+}
+
+h2 {
+    color: rgb(0, 126, 126);
+    font-size: 130%;
+}
+
+/* Links in Weekly Specials */
+article:last-of-type a:hover {
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    font-size: 0.6em;
+    margin-top: 20px ;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article:first-of-type, article:last-of-type {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
