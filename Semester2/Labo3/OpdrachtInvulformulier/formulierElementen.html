@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Opdracht formulier</title>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First name*:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Your first name" required><br>
+        <label for="lname">Last name*:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+    </fieldset>
+    <fieldset>
+        <legend>Sports</legend>
+        <p>Which sport do you train?</p>
+        <input type="checkbox" id="Sport1" name="Sport1" value="Running">
+        <label for="Sport1">Running</label><br>
+        <input type="checkbox" id="Sport2" name="Sport2" value="Swimming">
+        <label for="Sport2">Swimming</label><br>
+        <input type="checkbox" id="Sport3" name="Sport3" value="Rowing">
+        <label for="Sport3">Rowing</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label for="Male">Male</label><br>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Female">Female</label><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Other">Other / Prefer not to say</label>
+        <input type="radio" id="Other" name="gender" value="Other">
+    </fieldset>
+    <fieldset>
+        <legend>Favorites</legend>
+        <label for="movie">Favorite movie:</label>
+        <input type="text" id="movie" name="movie" placeholder="Write your favorite quote"><br>
+        <label for="quote">Favorite quote:</label>
+        <input type="text" id="quote" name="quote"><br>
+        <label for="foods">Favorite food:</label>
+        <input list="foods" id="food" name="food">
+        <datalist id="foods">
+            <option value="Hamburger"/>
+            <option value="Hot Dog"/>
+            <option value="Pizza"/>
+        </datalist><br>
+        <label for="flavor">Choose a flavor:</label>
+        <input type="text" id="flavor" name="flavor">
+    </fieldset>
+    <fieldset>
+        <legend>Security & Contact</legend>
+        <label for="pass">Password*:</label>
+        <input type="password" id="pass" name="pass"><br>
+        <label for="email">Email address*:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+        <label for="site">Favorite site:</label>
+        <input type="url" id="site" name="site" placeholder="Enter the URL of your favorite site"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="num10">Favorite number (1-10):</label>
+        <input type="number" id="num10" name="num10" min="1" max="10"><br>
+        <label for="num1000">Favorite number (11-100):</label>
+        <input type="range" id="num1000" name="num1000" min="11" max="1000"><br>
+        <label for="birthplace">When were you born?</label>
+        <input type="date" id="birthplace" name="birthplace"><br>
+        <label for="zipcode">Belgium zip-code reg number*:</label>
+        <input type="text" id="zipcode" name="zipcode" placeholder="9999">
+
+    </fieldset>
+    <fieldset>
+        <legend>Miscellaneous</legend>
+        <label for="search">Search for something:</label>
+        <input type="search" id="search" name="search"><br>
+        <label for="color">What is your favorite color?</label>
+        <input type="color" id="color" name="color"><br>
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+    </fieldset>
+    <input type="submit">
+<form/>
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
