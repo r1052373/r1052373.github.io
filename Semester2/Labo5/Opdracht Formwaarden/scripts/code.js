@@ -1,7 +1,7 @@
 const setup = () => {
 
     let btn = document.getElementById('btn');
-    btn.addEventListener('click', (e) => {4
+    btn.addEventListener('click', (e) => {
         e.preventDefault();
         let isRoker = document.getElementById('isRoker').checked;
         let moedertaal = document.getElementsByName("taal");
