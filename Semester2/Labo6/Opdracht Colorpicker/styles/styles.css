@@ -1,0 +1,40 @@
+.colorDemo {
+	width:90px;
+	height:70px;
+	border:1px solid black;
+	margin:auto;
+	border-radius: 5px;
+}
+#body{
+	border: 5px solid #7e7e7e;
+	border-radius: 10px;
+	width:400px;
+	display: inline-flex;
+	padding: 10px;
+
+
+
+}
+#slider{
+	margin: auto;
+}
+#tekst{
+	margin: auto;
+	text-align: right;
+}
+#submit{
+	height: 10%;
+	margin-top: 50px;
+}
+#colors{
+	display: inline-flex;
+	flex-wrap: wrap;
+
+}
+.close{
+	display: block;
+	float: right;
+}
+.invisible{
+	display: none;
+}

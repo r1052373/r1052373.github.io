@@ -1,10 +1,13 @@
 const setup = () => {
     let btnToon=document.getElementById("btnToon");
-    btnToon.addEventListener("click", toon);
+    let tekst = document.getElementById("tekst");
+    btnToon.addEventListener("click", (e) => {
+        toon(tekst)
+    });
 };
 
-const toon = () => {
-    console.log(document.getElementById("txtInput").value.split('').join(' '));
+const toon = (tekst) => {
+    tekst.innerText = document.getElementById("txtInput").value.split('').join(' ');
 };
 
 
