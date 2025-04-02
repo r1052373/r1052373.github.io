@@ -1,0 +1,36 @@
+.tile {
+    height: 126px;
+    width: 126px;
+    background-color: #00496B;
+}
+
+body {
+    justify-items: center;
+}
+
+#container {
+    gap: 10px;
+    justify-content: center;
+    display: grid;
+    width: calc(126px * 4);
+    grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.completed {
+    background-color: white;
+}
+
+.wrong {
+
+    outline: 5px solid red;
+}
+
+.correct {
+
+    outline: 5px solid green;
+}
